@@ -1,0 +1,35 @@
+.row {
+	display: flex;
+	padding: 15px;
+	align-items: center;
+	font-size: 1.3rem;
+	border: 1px solid #aaa;
+	border-bottom: 0;
+}
+
+.row:last-child {
+	border-bottom: 1px solid #aaa;
+}
+
+.row:hover {
+	background: #ccc;
+}
+
+.row:hover .btn {
+	display: block;
+}
+
+.row span:first-child {
+	margin-right: 1rem;
+}
+
+.btn {
+	margin-left: auto;
+	background: #ddd;
+	padding: 5px 10px;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+	display: none;
+
+}
