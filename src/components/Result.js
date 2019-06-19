@@ -14,11 +14,13 @@ export default class result extends Component {
 
 	render() {
 		return (
-			<div className="result">
-				{this.props.emojis.map(emoji => (
-					<Row emoji={emoji} key={emoji.title} />
-				))}
-			</div>
+			(this.props.emojis.length !== 0 &&
+				<div className="result">
+					{this.props.emojis.map(emoji => (
+						<Row emoji={emoji} key={emoji.title} />
+					))}
+				</div>
+			)
 		);
 	}
 }
