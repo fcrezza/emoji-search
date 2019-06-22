@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./Input.css";
+import PropTypes from 'prop-types'
 
 export default class Input extends Component {
 	render() {
@@ -13,4 +14,9 @@ export default class Input extends Component {
 			</div>
 		);
 	}
+}
+
+Input.propTypes = {
+	value: PropTypes.string.isRequired,
+	handleChange: PropTypes.func.isRequired
 }

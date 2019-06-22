@@ -4,10 +4,10 @@
   "private": true,
   "homepage": "https://fcrezza.github.io/emoji-search",
   "dependencies": {
-    "big.js": "^5.2.2",
     "clipboard": "^2.0.4",
     "gh-pages": "^2.0.1",
     "github-fork-ribbon-css": "^0.2.3",
+    "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1"

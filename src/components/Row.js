@@ -1,7 +1,8 @@
 import React from "react";
 import "./Row.css";
+import PropTypes from "prop-types"
 
-function Row(props) {
+export default function Row(props) {
 	const { symbol, title } = props.emoji;
 	return (
 		<div className="row">
@@ -16,4 +17,6 @@ function Row(props) {
 	);
 }
 
-export default Row;
+Row.propTypes = {
+	emoji: PropTypes.object.isRequired
+}

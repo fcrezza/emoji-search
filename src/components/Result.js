@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import ClipboardJS from "clipboard";
+import PropTypes from "prop-types"
 import Row from "./Row";
 import "./Result.css";
+
 
 export default class result extends Component {
 	componentDidMount() {
@@ -23,4 +25,8 @@ export default class result extends Component {
 			)
 		);
 	}
+}
+
+result.propTypes = {
+	emojis: PropTypes.array.isRequired
 }
