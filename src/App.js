@@ -12,13 +12,12 @@ class App extends Component {
 			value: "",
 			filteredEmoji: []
 		};
-		this.handleChange = this.handleChange.bind(this);
 	}
 
-	handleChange(event) {
+	handleChange = event => {
 		this.setState({
 			value: event.target.value,
-			filteredEmoji: Filter(event.target.value, 20)
+			filteredEmoji: Filter(this.state.value.toLowerCase(), 10)
 		});
 	}
 
