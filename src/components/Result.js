@@ -1,19 +1,8 @@
-import React, { Component } from "react";
-import ClipboardJS from "clipboard";
-import PropTypes from "prop-types"
-import Row from "./Row";
-import "./Result.css";
-
+import React, { Component } from "react"
+import Row from "./Row"
+import "./Result.css"
 
 export default class result extends Component {
-	componentDidMount() {
-		this.clipboard = new ClipboardJS(".btn");
-	}
-
-	componentWillUnmount() {
-		this.clipboard.destroy();
-	}
-
 	render() {
 		return (
 			(this.props.emojis.length !== 0 &&
@@ -23,10 +12,6 @@ export default class result extends Component {
 					))}
 				</div>
 			)
-		);
+		)
 	}
-}
-
-result.propTypes = {
-	emojis: PropTypes.array.isRequired
 }
