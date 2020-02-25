@@ -5,15 +5,15 @@
   "homepage": "https://fcrezza.github.io/emoji-search",
   "dependencies": {
     "clipboard": "^2.0.4",
-    "gh-pages": "^2.0.1",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
+    "gh-pages": "^2.2.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
     "react-scripts": "3.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "jest",
     "eject": "react-scripts eject",
     "deploy": "gh-pages -d build"
   },
@@ -31,5 +31,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "babel-jest": "^25.1.0"
   }
 }

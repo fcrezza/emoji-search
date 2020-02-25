@@ -1,6 +1,6 @@
 import emojiList from "./emojiList";
 
-export default function filter(value, max) {
+export default function filterEmojis(value, max) {
 	return emojiList
 		.filter(
 			emoji =>

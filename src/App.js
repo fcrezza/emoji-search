@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Header from "./components/Header";
 import Input from "./components/Input";
-import Filter from "./Filter";
+import filterEmojis from "./filterEmojis";
 import Result from "./components/Result";
 import "./App.css";
 
@@ -17,7 +17,7 @@ class App extends Component {
 	handleChange = event => {
 		this.setState({
 			value: event.target.value,
-			filteredEmoji: Filter(this.state.value.toLowerCase(), 10)
+			filteredEmoji: filterEmojis(this.state.value.toLowerCase(), 10)
 		});
 	}
 
